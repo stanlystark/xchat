@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "xchat",
+  "version": "${version}",
+
+  "name": "ExtraChat",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Stark"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/xchat/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ru.xpixel.xchat.ExtraChatMod"
+    ]
+  },
+  "mixins": [
+    "xchat.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric-api": "*",
+    "minecraft": "~1.19.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
